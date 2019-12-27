@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="521dp"
+        android:background="#ffffff"></View>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:background="#2196F3"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:text="Help"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:layout_gravity="right"/>
+
+    <ImageView
+        android:id="@+id/inputColor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/input_color"
+        android:text="Input color"></ImageView>
+
+    <ImageView
+        android:id="@+id/change"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/change"
+        android:text="Input color"></ImageView>
+
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="212dp"
+        android:src="@drawable/exit"
+        android:text="Input color"></ImageView>
+
+    <ImageView
+        android:id="@+id/dialog"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/input_color_dialog"
+        android:text="Input color"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ввод цвета"
+        android:layout_gravity="left"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Смена цвета экрана"
+        android:layout_gravity="left"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="160dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выход из приложения"
+        android:layout_gravity="left"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="240dp"/>
+
+</FrameLayout>

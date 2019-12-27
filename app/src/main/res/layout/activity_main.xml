@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewLeft"
+        android:layout_width="216dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"></View>
+
+    <View
+        android:id="@+id/viewRight"
+        android:layout_width="216dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"></View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewLeftandRight">
+    </View>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="#2196F3">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:text="Садик Назар Самирович"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:text="7 Вариант"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/inputColor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="100dp"
+        android:text="Input color"></Button>
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="100dp"
+        android:text="Change"></Button>
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="100dp"
+        android:text="Help"></Button>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Exit"
+        android:layout_gravity="center|right"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="60dp"></Button>
+
+</FrameLayout>

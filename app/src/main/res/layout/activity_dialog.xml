@@ -6,11 +6,6 @@
 
     <View
         android:layout_width="wrap_content"
-        android:layout_height="246dp"
-        android:background="#ffffff"></View>
-
-    <View
-        android:layout_width="wrap_content"
         android:layout_height="47dp"
         android:background="#2196F3"></View>
 

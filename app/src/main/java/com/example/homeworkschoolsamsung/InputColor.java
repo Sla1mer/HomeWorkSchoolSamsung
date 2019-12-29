@@ -62,7 +62,9 @@ public class InputColor extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                saveText();
+                red2 = r.getText().toString();
+                green2 = g.getText().toString();
+                blue2 = b.getText().toString();
 
                 Intent intent2 = new Intent(InputColor.this, MainActivity.class);
                 intent2.putExtra("red",r.getText().toString());
@@ -73,6 +75,7 @@ public class InputColor extends AppCompatActivity {
                 }else if (right.isChecked()){
                     intent2.putExtra("checkBox", "2");
                 }
+                saveText();
                 startActivity(intent2);
             }
         });
@@ -81,9 +84,9 @@ public class InputColor extends AppCompatActivity {
     public void saveText(){
         SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(InputColor.this);
         SharedPreferences.Editor myEditor = myPreferences.edit();
-        myEditor.putString("RED", r.getText().toString());
-        myEditor.putString("GREEN", g.getText().toString());
-        myEditor.putString("BLUE", b.getText().toString());
+        myEditor.putString("RED", red2);
+        myEditor.putString("GREEN", green2);
+        myEditor.putString("BLUE", blue2);
         myEditor.commit();
 
     }
@@ -94,8 +97,12 @@ public class InputColor extends AppCompatActivity {
         String green = myPreferences.getString("GREEN", green2);
         String blue = myPreferences.getString("BLUE", blue2);
 
-        r.setText(red);
-        g.setText(green);
-        b.setText(blue);
+        red2 = red;
+        green2 = green;
+        blue2 = blue;
+
+        r.setText(red2);
+        g.setText(green2);
+        b.setText(blue2);
     }
 }
